@@ -1,0 +1,6 @@
+migrations/
+*.pyc
+stone.db
+py3portEnv/
+.DS_Store
+__pycache__/
