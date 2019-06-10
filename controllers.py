@@ -3,7 +3,7 @@ from config import db, datetime
 #from models import User
 
 def index():
-    return render_template('index,html')
+    return render_template('index.html')
 
 def nav():
     return render_template('nav.html')
