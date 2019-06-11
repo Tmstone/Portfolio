@@ -14,6 +14,9 @@ def about():
 def projects():
     return render_template('projects.html')
 
+def contact():
+    return render_template('contact.html')
+
 def logout():
     session.clear()
     return redirect('/')
