@@ -16,6 +16,9 @@ def projects():
 
 def contact():
     return render_template('contact.html')
+    
+def login():
+    return render_template('login.html')
 
 def logout():
     session.clear()
