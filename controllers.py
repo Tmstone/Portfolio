@@ -16,6 +16,10 @@ def projects():
 
 def contact():
     return render_template('contact.html')
+
+def new_contact():
+    #submit data to db
+    return redirect('/')
     
 def login():
     return render_template('login.html')
