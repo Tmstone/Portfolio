@@ -17,3 +17,46 @@ class User(bd.Model):
     
     def __repr__(self):
         return '<User {}>'.format(self.name)
+
+    @classmethod
+    def validate_user(cls, email):
+        errors=[]
+        existing_users=cls.query.filter(cls.email==email).count()
+        if (existing_users)>0:
+            errors.append('This email address is already registered!')
+        return errors
+
+    @classmethod
+    def validate_name(cls, first_name, last_name):
+        errors=[]
+        if len(name) < 2:
+            errors.append('Please enter a valid name (*at least three characters*).')
+        return errors
+    
+    @classmethod
+    def validate_email(cls, email):
+        errors=[]
+        if not EMAIL_REGEX.match(email):
+            errors.append('Please enter a valid email.')
+        return errors
+    
+    @classmethod
+    def validate_phone(cls, phone):
+        errors=[]
+        if len(phone) < 7:
+            errors.append('Please enter a valid phone number')
+        return errors
+    
+    @classmethod
+    def validate_user(cls, attendee_info):
+        errors = []
+        errors += cls.validate_name(attendee_info['first_name'], attendee_info['last_name'])
+        errors += cls.validate_email(attendee_info['email'])
+        errors += cls.validate_password(attendee_info['password'], attendee_info['confirm_password'])
+        errors += cls.validate_phone(attendee_info['phone'])
+        errors += cls.validate_school(attendee_info['school'])
+        errors += cls.validate_graduation(attendee_info['graduation'])
+        errors += cls.validate_parent(attendee_info['parent_first'], attendee_info['parent_last'] )
+        errors += cls.validate_parent_email(attendee_info['parent_email'])
+        errors += cls.validate_parent_phone(attendee_info['parent_phone'])
+        return errors
