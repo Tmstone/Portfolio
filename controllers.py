@@ -19,6 +19,7 @@ def contact():
 
 def new_contact():
     #submit data to db
+    #use ajax for confirmation
     return redirect('/')
     
 def login():
