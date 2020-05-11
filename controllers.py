@@ -20,6 +20,13 @@ def contact():
 def new_contact():
     #submit data to db
     #use ajax for confirmation
+    errors = COntact.validate_contact(request.form)
+    if errors:
+        for error in errors:
+            flash(error)
+        return redirect('/contact')
+    contact = COntact.add_conact(request.form)
+    session['contact_id'] = contact.id
     return redirect('/')
     
 def login():
