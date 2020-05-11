@@ -49,7 +49,7 @@ class Contact(bd.Model):
         return errors
     
     @classmethod
-    def validate_user(cls, contact_info):
+    def validate_contact(cls, contact_info):
         errors = []
         errors += cls.validate_name(contact_info['name'])
         errors += cls.validate_email(contact_info['email'])
