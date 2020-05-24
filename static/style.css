@@ -9,3 +9,13 @@ h1 {
      padding: 10px;
      display: inline-block;
 }
+#container {
+     margin: 0;
+     padding: 10px;
+     display: inline-block;
+}
+#row {
+     margin: 0;
+     padding: 10px;
+     display: inline-block;
+}
