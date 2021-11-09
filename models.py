@@ -6,7 +6,7 @@ from config import *
 EMAIL_REGEX = re.compile(r'^[a-zA-Z0-9.+_-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]+$')
 PW_REGEX = re.compile('^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!#%*?&]{6,20}$')
 
-class Contact(bd.Model):
+class Contact(db.Model):
     __tablename__ = "contact"
     id = bd.Column(bd.Integer, primary_key = True)
     name = db.Column(db.String(90))
