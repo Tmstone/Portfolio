@@ -9,4 +9,4 @@ app.add_url_rule('/projects', view_func=projects)
 app.add_url_rule('/contact',view_func=contact)
 app.add_url_rule('/jackfruit', view_func=login)
 
-app.add_url_rule('/new/contact', method=POST, view_func=new_contact)
+#app.add_url_rule('/new/contact', method=POST, view_func=new_contact)

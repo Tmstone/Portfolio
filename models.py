@@ -8,7 +8,7 @@ PW_REGEX = re.compile('^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@
 
 class Contact(db.Model):
     __tablename__ = "contact"
-    id = bd.Column(bd.Integer, primary_key = True)
+    id = db.Column(db.Integer, primary_key = True)
     name = db.Column(db.String(90))
     email = db.Column(db.String(45))
     phone = db.Column(db.String(45))
@@ -64,6 +64,6 @@ class Contact(db.Model):
             phone=contact_info['phone'],
             message=contact_info['message']
             )
-        db.session.add(new_attendee)
+        db.session.add(new_contact)
         db.session.commit()
         return new_contact
