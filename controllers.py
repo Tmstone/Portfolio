@@ -8,6 +8,9 @@ def index():
 def nav():
     return render_template('nav.html')
 
+def footer():
+    return render_template('footer.html')
+
 def about():
     return render_template('about.html')
 

@@ -1,54 +1,83 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-     <head>
-          <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-          <meta charset="utf-8">
-          <meta name="Terence M. Stone's Portfolio" content="A site designed to present my full-stack talents.">
-          <title>My Portfolio | about</title>
-          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-          <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
-          <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-          <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-          <script src="{{ url_for('static', filename='main.js') }}"></script>
-     </head>
-     <body>
-          <div class="container">
-               <div class="header">
-                    <div id="nav"></div>
-               </div>
-               <div class="section">
-                    <form class="col-lg-6 offset-lg-3" action="/new/contact" method="post">
-                         <h1>Contact</h1>
-                         <p>Enter your contact information below:</p>
-                         <p>Expect a response in 24 hours</p>
-                         <div class="form-row">
-                              <label for="name">Name</label>
-                              <input type="text" class="form-control" name="name" value="">
-                         </div>
-                         <div class="form-row">
-                              <label for="email">Email</label>
-                              <input type="text" class="form-control" name="email" value="">
-                         </div>
-                         <div class="form-row">
-                              <label for="phone">Phone</label>
-                              <input type="text" class="form-control" name="phone" value="">
-                         </div>
-                         <div class="form-row">
-                              <label for="text">Your message</label>
-                              <textarea class="form-control" name="name" rows="8" cols="80"></textarea>
-                         </div>
-                         <div class="row justify-content-center">
-                              <div class="col-8">
-                                   <label for="hidden"></label>
-                                   <input type="submit" class="btn btn-primary form-control" value="Submit">
-                              </div>
-                         </div>
-                    </form>
-               </div>
-               <div class="footer">
-                    <p>&copy; 2020 Terence M. Stone | Portfolio</p>
-               </div>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta charset="utf-8" />
+    <meta
+      name="Terence M. Stone's Portfolio"
+      content="A site designed to present my full-stack talents."
+    />
+    <title>My Portfolio | about</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.4.0.min.js"
+      integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div id="nav"></div>
+      </div>
+      <div class="section">
+        <form class="col-lg-6 offset-lg-3" action="/new/contact" method="post">
+          <h1>Contact</h1>
+          <p>Enter your contact information below:</p>
+          <p>Expect a response in 24 hours</p>
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" name="name" value="" />
           </div>
-     </body>
-     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="text" class="form-control" name="email" value="" />
+          </div>
+          <div class="form-row">
+            <label for="phone">Phone</label>
+            <input type="text" class="form-control" name="phone" value="" />
+          </div>
+          <div class="form-row">
+            <label for="text">Your message</label>
+            <textarea
+              class="form-control"
+              name="name"
+              rows="8"
+              cols="80"
+            ></textarea>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-8">
+              <label for="hidden"></label>
+              <input
+                type="submit"
+                class="btn btn-primary form-control"
+                value="Submit"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"
+  ></script>
 </html>
