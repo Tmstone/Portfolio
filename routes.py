@@ -1,5 +1,5 @@
 from config import app
-from controllers import *
+from controllers import index, nav, about, projects, contact, login
 
 app.add_url_rule('/', view_func=index)
 app.add_url_rule('/nav', view_func=nav)

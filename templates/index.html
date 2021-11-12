@@ -1,40 +1,71 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-     <head>
-          <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-          <meta charset="utf-8">
-          <meta name="Terence M. Stone's Portfolio" content="A site designed to present my full-stack talents.">
-          <title>My Portfolio</title>
-          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-          <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
-          <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-          <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-          <script src="{{ url_for('static', filename='main.js') }}"></script>
-          <script>
-               //async code for contact received
-          </script>
-     </head>
-     <body>
-          <div class="container">
-               <div class="header">
-                    <div id="nav"></div>
-                    <!--h1>Terence M. Stone's | Portfolio</h1-->
-               </div>
-               <div class="section">
-                    <img src="{{ url_for('static', filename='img/ts_icon.png')}}" alt="">
-                    <h1>I'm Terence M. Stone & </h1>
-                    <h1>I am a Full-Stack Developer.</h1>
-               </div>
-               <div class="section">
-                    <p>A smart, driven software engineer with professional technical experience in full-stack web development, UX/UI design, application development, deployment, algorithms, and object-oriented design. Great at learning new technologies and design concepts. Over 5 years’ experience in multicultural environment training students in STEM curriculum.</p>
-               </div>
-               <div class="section">
-                    <button class="btn-primary" id="work">Portfolio | Work</button>
-               </div>
-               <div class="footer">
-                    <p>&copy; 2020 Terence M. Stone | Portfolio</p>
-               </div>
-          </div>
-     </body>
-     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta charset="utf-8" />
+    <meta
+      name="Terence M. Stone's Portfolio"
+      content="A site designed to present my full-stack talents."
+    />
+    <title>My Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.4.0.min.js"
+      integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+    <script>
+      //async code for contact received
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div id="nav"></div>
+        <!--h1>Terence M. Stone's | Portfolio</h1-->
+      </div>
+      <div class="section">
+        <h1>I'm Terence M. Stone &</h1>
+        <h1>I am a Full-Stack Developer.</h1>
+      </div>
+      <div class="section">
+        <img src="{{ url_for('static', filename='img/ts_icon.png')}}" alt="" />
+      </div>
+      <div class="section">
+        <p>
+          A smart, driven software engineer with professional technical
+          experience in full-stack web development, UX/UI design, application
+          development, deployment, algorithms, and object-oriented design. Great
+          at learning new technologies and design concepts. Over 5 years’
+          experience in multicultural environment training students in STEM
+          curriculum.
+        </p>
+      </div>
+      <div class="section">
+        <button class="btn-primary" id="work">Portfolio | Work</button>
+      </div>
+      <div class="footer">
+        <p>&copy; 2021 Terence M. Stone | Portfolio</p>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"
+  ></script>
 </html>
