@@ -15,7 +15,7 @@ $(document).ready(function () {
     window.open(this.href);
     return false;
   });
-    
+   */
   $(function () {
     $("#work").click(function (event) {
       $.get("/project", function (data) {
@@ -23,8 +23,7 @@ $(document).ready(function () {
         //window.open(this.href);
         $("#nav").html(nav);
       });
-      //return false;
+      return false;
     });
   });
-  */
 });

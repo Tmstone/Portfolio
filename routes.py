@@ -4,7 +4,7 @@ from controllers import index, nav, about, projects, contact, new_contact, login
 app.add_url_rule('/', view_func=index)
 app.add_url_rule('/nav', view_func=nav)
 app.add_url_rule('/footer', view_func=footer)
-
+#refactor /about to /experience
 app.add_url_rule('/about', view_func=about)
 app.add_url_rule('/projects', view_func=projects)
 app.add_url_rule('/contact',view_func=contact)
