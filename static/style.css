@@ -1,8 +1,13 @@
 body {
   padding: 10%;
+  font-family: "Jost", Helvetica, sans-serif;
 }
 h1 {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Jost", Helvetica, sans-serif;
+  font-weight: 900;
+}
+p {
+  font-weight: 400;
 }
 #section {
   margin: 0;

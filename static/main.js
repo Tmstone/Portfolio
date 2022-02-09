@@ -18,10 +18,12 @@ $(document).ready(function () {
    */
   $(function () {
     $("#work").click(function (event) {
-      $.get("/project", function (data) {
+      $.get("/projects", function (data) {
         console.log("button clicked");
+        //this opens a new window with no data
         //window.open(this.href);
-        $("#nav").html(nav);
+        //when button is clicked, the navigation disappears
+        //$("#nav").html(nav);
       });
       return false;
     });
